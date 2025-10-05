@@ -1,5 +1,6 @@
 {
   "name": "http-req",
+  "publisher": "joaopaulo2391",
   "displayName": "HttpReq",
   "description": "Make HTTP requests (GET, POST, PUT, DELETE, PATCH) directly from VSCode. Supports a Postman-like UI for crafting requests.",
   "icon": "./assets/httpReq_vsce_icon.png", 
@@ -12,6 +13,10 @@
     "Testing"
   ],
   "activationEvents": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joao2391/httpReq"
+  },
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
