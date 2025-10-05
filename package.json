@@ -4,7 +4,7 @@
   "displayName": "HttpReq",
   "description": "Make HTTP requests (GET, POST, PUT, DELETE, PATCH) directly from VSCode. Supports a Postman-like UI for crafting requests.",
   "icon": "./assets/httpReq_vsce_icon.png", 
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.104.1"
   },
