@@ -1,0 +1,13 @@
+# Node.js
+node_modules/
+npm-debug.log
+.vscode-test/
+
+# Visual Studio Code Extension Development
+.vscode/
+out/
+dist/
+esbuild.js
+tsconfig.json
+*.vsix
+*.log
