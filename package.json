@@ -4,7 +4,7 @@
   "displayName": "HttpReq",
   "description": "Make HTTP requests (GET, POST, PUT, DELETE, PATCH) directly from VSCode. Supports a Postman-like UI for crafting requests.",
   "icon": "./assets/httpReq_vsce_icon.png", 
-  "version": "0.0.2",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.104.1"
   },
@@ -12,13 +12,33 @@
     "Other",
     "Testing"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onView:httpReqView",
+    "onCommand:http-req.openHttpClient"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/joao2391/httpReq"
   },
   "main": "./dist/extension.js",
   "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "httpReqSidebar",
+          "title": "HTTP Client",
+          "icon": "$(globe)"
+        }
+      ]
+    },
+    "views": {
+      "httpReqSidebar": [
+        {
+          "id": "httpReqView",
+          "name": "HTTP Client"
+        }
+      ]
+    },
     "commands": [
       {
         "command": "http-req.httpGet",

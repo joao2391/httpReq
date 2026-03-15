@@ -11,3 +11,4 @@ esbuild.js
 tsconfig.json
 *.vsix
 *.log
+AGENTS.md
